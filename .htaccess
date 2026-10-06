@@ -1,0 +1,8 @@
+Options -MultiViews
+RewriteEngine On
+
+# Route all requests through router.php (PHP built-in server compatible)
+# For Apache: serve existing files directly, otherwise pass to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

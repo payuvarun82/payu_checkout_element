@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: payu-checkout-elements
+    runtime: docker
+    plan: free
+    envVars:
+      - key: PAYU_MERCHANT_KEY
+        sync: false
+      - key: PAYU_MERCHANT_SECRET
+        sync: false
+      - key: PAYU_MERCHANT_SALT
+        sync: false
+      - key: PAYU_CHECKOUT_API_URL
+        value: https://apitest.payu.in
+      - key: PAYU_ELEMENTS_SDK_URL
+        value: https://jssdk-uat.payu.in/checkout/payu-checkout-elements.umd.js
+      - key: PAYU_AMOUNT
+        value: "100"
+      - key: PAYU_PRODUCTINFO
+        value: Tickets
