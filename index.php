@@ -390,7 +390,7 @@ HTML;
     </ul>
 
     <h2 class="section-title">Card details</h2>
-    <p class="section-sub">Card data is captured in PayU’s iframe. Call <code>processPayment()</code>; the Promise resolves or rejects when the iframe reports payment success or failure.</p>
+    <p class="section-sub">Card data is captured in PayU’s iframe.</p>
 
     <div id="payu-card-element-container"></div>
     <div id="bin-chip" class="bin-chip" aria-live="polite"></div>
